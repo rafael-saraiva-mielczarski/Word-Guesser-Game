@@ -1,6 +1,7 @@
 # This is my first game built!
 
 By acessing the link below you are able to play it and try out.
+
 https://rafael-saraiva-mielczarski.github.io/Word-Guesser-Game/
 
 ## Project Description
