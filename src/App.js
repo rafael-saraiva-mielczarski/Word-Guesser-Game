@@ -21,10 +21,10 @@ function App() {
     const [guessedLetters, setGuessedLetters] = useState("");
     const [wrongLetters, setWrongLetters] = useState([]);
     const [guesses, setGuesses] = useState(3);
-    const [score, setScore] = useState(50);
+    const [score, setScore] = useState(0);
 
 
-    const chooseWordAndCategory = () => {
+    const chooseWordAndCategory = useCallback(() => {
         //get secret word and hint for the game
         const categories = Object.keys(words);
         const category = categories[
@@ -34,9 +34,12 @@ function App() {
         const secretWord = words[category][Math.floor(Math.random() * words[category].length)]
 
         return {secretWord, category}
-    };
+    }, [words]);
 
-    const onStartGame = () => {
+    const onStartGame = useCallback(() => {
+        //limpar todas letras
+        clearLetterStates();
+
         //get secret word and hint
         const { secretWord, category } = chooseWordAndCategory();
 
@@ -48,16 +51,16 @@ function App() {
         setChosenCategory(category);
         setChosenWord(secretWord);
         setLetters(wordLetters);
-        console.log(wordLetters)
-
+        
         setGameStage(stages[1].name);
-    };
+    }, [chooseWordAndCategory]);
 
     const verifyLetter = (letter) => {
         const lowereCasedLetter = letter.toLowerCase();
 
         //checar se a letra ja foi utilizada
-        if( guessedLetters.includes(lowereCasedLetter) || guessedLetters.includes(lowereCasedLetter)) {
+        if( guessedLetters.includes(lowereCasedLetter) || wrongLetters.includes(lowereCasedLetter)) {   
+            alert("Essa letra já foi utilizada")
            return;
         }
 
@@ -77,11 +80,13 @@ function App() {
         }
     };
 
+    //resetar ao estado inicial do jogo
     function clearLetterStates() {
         setGuessedLetters([]);
         setWrongLetters([]);
     }
 
+    //checar se a tentativas acabaram e finalizar o jogo
     useEffect(() => {
         if(guesses <= 0) {
             //resetar todos estados
@@ -92,6 +97,21 @@ function App() {
 
     }, [guesses]);
 
+    //checar condição de vitória
+    useEffect(() => {
+        const uniqueLetters = [...new Set(letters)]
+        //condição da vitória
+        if(guessedLetters.length === uniqueLetters.length) {
+            //adicionar score
+            setScore((actualScore) => actualScore += 100);
+
+            //recomeçar o jogo
+            onStartGame();
+        }
+
+    }, [guessedLetters, letters, onStartGame])
+
+    //func para recomeçar o jogo
     const onRetryGame = () => {
         setScore(0);
         setGuesses(3);
