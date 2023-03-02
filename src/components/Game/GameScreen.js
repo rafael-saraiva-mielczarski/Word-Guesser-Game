@@ -28,11 +28,11 @@ const GameScreen = (
   return (
     <div className='game'>
         <p className="points">
-            <span>Pontuação: {score}</span>
+            <span>Score: {score}</span>
         </p>
-        <h1>Adivinhe a Palavra</h1>
-        <h3 className="hint">Dica da palavra: <span>{hint}</span></h3>
-        <p>Você ainda tem {guessesLeft} tentativas</p>
+        <h1>Guess the word</h1>
+        <h3 className="hint">Hint: <span>{hint}</span></h3>
+        <p>You still have {guessesLeft} attempts</p>
         <div className="wordContainer">
             {letters.map((letter, i) => 
                 guessedLetters.includes(letter) ? (
@@ -43,7 +43,7 @@ const GameScreen = (
             )}
         </div>
         <div className="letterContainer">
-            <p>Tente adivinhar as letras</p>
+            <p>Try guess the letters</p>
             <form onSubmit={handleSubmit}>
                 <input 
                 type="text" 
@@ -53,11 +53,11 @@ const GameScreen = (
                 onChange={(e) => setLetter(e.target.value)} 
                 value={letter}
                 ref={letterInputRef}/>
-                <button>Tentar</button>
+                <button>Try</button>
             </form>
         </div>
         <div className="wrongLetterContainer">
-            <p>Letras já utilizadas: </p>
+            <p>Letters already used: </p>
             {wrongLetters.map((letter, i) => (
                 <span key={i}>{letter} - </span>
             ))}

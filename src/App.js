@@ -60,7 +60,7 @@ function App() {
 
         //checar se a letra ja foi utilizada
         if( guessedLetters.includes(lowereCasedLetter) || wrongLetters.includes(lowereCasedLetter)) {   
-            alert("Essa letra já foi utilizada")
+            alert("This letter was already used!")
            return;
         }
 
