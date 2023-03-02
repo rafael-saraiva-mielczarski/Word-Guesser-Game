@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# This is my first game built!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+By acessing the link below you are able to play it and try out.
 
-## Available Scripts
+https://rafael-saraiva-mielczarski.github.io/Word-Guesser-Game/
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+This project is from a course, I put my own twist to it but it's main purpose is to serve as a knowledge practice from everything that has been taught until this point
+of the course. The main React concepts used in this project are form validations, if operations, components, styling, React Hooks(useState, useEffect, useCallback),
+loops(map) and many others concepts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Installation and Requirements: 
+This project is deployed on GitHub Pages, hence you don't need to install it locally, but if you want to do it I'll guide you.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requirements:
+- Node installed
+- VSCode installed
 
-### `npm test`
+## Installation Process:
+1. The first step to it is decide which IDE you will use, I would sugest you to use VSCode.
+VSCode extensions to help the coding process: 
+- ES7 React/Redux/React-Native snippets.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Create a empty Folder in your computer and name it as you want.
+3. Go to the this repo, click the Code button above it and copy the link to clone it locally.
+4. Open the folder you created on VSCode, then click the terminal option, on the top of the page, and click New Terminal.
+5. On the terminal, make sure you're in the correct path, after that write `git clone` and paste the URL you copied on the step 3.
+6. Now you will be able to see the code from the repo in your VSCode.
+7. Before starting it you will need to run `npm install` on the terminal to install all the dependecies that I use in this project. Make sure you're in the correct path, run the command inside the project folder.
+8. If followed all the steps, you just need to run `npm start` to open the project locally, it probably will open on `http://localhost:3000`.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Thank you for reading, hope you have a fun time playing!
