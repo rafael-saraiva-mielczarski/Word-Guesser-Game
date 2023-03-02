@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Word-Guesser-Game/static/css/main.a05975ff.css",
-    "main.js": "/Word-Guesser-Game/static/js/main.c6847b98.js",
+    "main.js": "/Word-Guesser-Game/static/js/main.08d9a731.js",
     "static/js/787.18753493.chunk.js": "/Word-Guesser-Game/static/js/787.18753493.chunk.js",
     "index.html": "/Word-Guesser-Game/index.html",
     "main.a05975ff.css.map": "/Word-Guesser-Game/static/css/main.a05975ff.css.map",
-    "main.c6847b98.js.map": "/Word-Guesser-Game/static/js/main.c6847b98.js.map",
+    "main.08d9a731.js.map": "/Word-Guesser-Game/static/js/main.08d9a731.js.map",
     "787.18753493.chunk.js.map": "/Word-Guesser-Game/static/js/787.18753493.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a05975ff.css",
-    "static/js/main.c6847b98.js"
+    "static/js/main.08d9a731.js"
   ]
 }
